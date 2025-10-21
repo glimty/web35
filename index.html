@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GLIMTHY INSULIN - Herbal Premium</title>
+<style>
+  :root {
+    --green: #1b8a3a;
+    --gold: #d4af37;
+    --dark: #1f1f1f;
+    --light-bg: #f9fbf9;
+  }
+  * { box-sizing: border-box; font-family: 'Poppins', Arial, sans-serif; }
+  body {
+    margin: 0;
+    background: var(--light-bg);
+    color: var(--dark);
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--green), #0e4f23);
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  header h1 {
+    font-size: 28px;
+    margin: 8px 0 0;
+    color: var(--gold);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  .banner {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  }
+  .banner img {
+    max-width: 240px;
+    width: 90%;
+    border-radius: 12px;
+  }
+  .price {
+    font-size: 22px;
+    color: var(--green);
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .promo {
+    font-size: 15px;
+    color: var(--dark);
+    margin-top: 4px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #fffbe7, #fff4d1);
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    padding: 30px;
+  }
+
+  h2 {
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  ul.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+  .benefit-list li {
+    background: #f4f8f4;
+    padding: 10px 14px;
+    border-left: 4px solid var(--green);
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
+  form {
+    margin-top: 30px;
+    display: grid;
+    gap: 14px;
+  }
+  label { font-size: 14px; color: #333; font-weight: 600; }
+  input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+  button {
+    background: linear-gradient(90deg, var(--green), #2fbf50);
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button:hover { transform: scale(1.05); background: linear-gradient(90deg, #2fbf50, var(--green)); }
+
+  .note {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  /* Floating WhatsApp Button */
+  .wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+    animation: pulse 1.8s infinite;
+    text-decoration: none;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0.4);}
+    70% { transform: scale(1.1); box-shadow: 0 0 0 15px rgba(37,211,102,0);}
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0);}
+  }
+
+  @media(max-width:720px){
+    ul.benefit-list { grid-template-columns: 1fr; }
+    section { margin: 20px; padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>GLIMTHY INSULIN NATURAL</h1>
+  <p style="margin:6px 0 0;">Suplemen Herbal untuk Gula Darah & Daya Tahan Tubuh</p>
+</header>
+
+<div class="banner">
+  <img src="gambar/WhatsApp Image 2025-10-21 at 09.55.51.jpeg" alt="">
+  <div class="price">Rp 390.000 / botol</div>
+  <div class="promo">Beli 2 gratis 1 • Beli 3 gratis 2</div>
+</div>
+
+<section>
+  <h2>🌿 Manfaat GLIMTHY INSULIN</h2>
+  <ul class="benefit-list">
+    <li>Mengontrol kadar gula darah</li>
+    <li>Meningkatkan produksi insulin alami</li>
+    <li>Meningkatkan kesehatan hati</li>
+    <li>Bersifat anti-inflamasi</li>
+    <li>Antioksidan alami tubuh</li>
+  </ul>
+
+  <h2>🛒 Form Pemesanan</h2>
+  <form onsubmit="return handleOrder(event)">
+    <label>Nama Lengkap</label>
+    <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+
+    <label>No. WhatsApp</label>
+    <input type="tel" id="phone" placeholder="Contoh: 081234567890" required>
+
+    <label>Pilih Paket</label>
+    <select id="package" required>
+      <option value="">-- Pilih Paket --</option>
+      <option value="1 botol (Rp 390.000)">1 botol (Rp 390.000)</option>
+      <option value="2 botol (Beli 2 Gratis 1)">2 botol (Beli 2 Gratis 1)</option>
+      <option value="3 botol (Beli 3 Gratis 2)">3 botol (Beli 3 Gratis 2)</option>
+    </select>
+
+    <label>Jumlah Pesanan</label>
+    <input type="number" id="qty" placeholder="Masukkan jumlah (mis. 1)" required>
+
+    <button type="submit">Kirim ke WhatsApp</button>
+    <div class="note">Setelah klik kirim, WhatsApp akan terbuka otomatis untuk menghubungi Anda.</div>
+  </form>
+</section>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6282299487608?text=Halo%20saya%20tertarik%20dengan%20produk%20GLIMTHY%20INSULIN" class="wa-float" target="_blank" title="Chat via WhatsApp">💬</a>
+
+<script>
+  const SELLER_WHATSAPP = "6282299487608";
+  function sanitizePhone(input){ return input.replace(/[\s()+\-\.]/g, ""); }
+
+  function handleOrder(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const phone = sanitizePhone(document.getElementById('phone').value.trim());
+    const pkg = document.getElementById('package').value;
+    const qty = document.getElementById('qty').value.trim();
+    if(!name || !phone || !pkg || !qty){ alert("Lengkapi semua data sebelum kirim."); return false; }
+
+    const msg = Halo, saya ingin memesan *GLIMTHY INSULIN* 🌿\n +
+                Nama: ${name}\n +
+                No. WA: ${phone}\n +
+                Paket: ${pkg}\n +
+                Jumlah: ${qty}\n\nMohon info total dan cara pembayaran.;
+    const waURL = https://wa.me/${SELLER_WHATSAPP}?text=${encodeURIComponent(msg)};
+    window.open(waURL, '_blank');
+    return false;
+  }
+</script>
+
+</body>
+</html>
